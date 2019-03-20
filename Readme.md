@@ -1,4 +1,4 @@
-###1. Create the Node.js app
+## Create the Node.js app
 
 First, create a new directory where all the files would live.
 In this directory create a package.json file that describes your app and its dependencies:
@@ -42,7 +42,7 @@ app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 ```
 
-###2. Create a Dockerfile
+## Create a Dockerfile
 
 Create the dockerfile and copy the contents from the Dockerfile here.<br/>
 
