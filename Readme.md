@@ -59,3 +59,21 @@ Here we will use the basic npm start which will run node server.js to start your
 ```
 CMD [ "npm", "start" ]
 ```
+
+## .dockerignore file
+
+Create a .dockerignore file in the same directory as your Dockerfile with following content:
+```
+node_modules
+npm-debug.log
+```
+
+This will prevent your local modules and debug logs from being copied onto your Docker image and possibly overwriting modules installed within your image.
+
+## Building your image
+Go to the directory that has your Dockerfile and run the following command to build the Docker image. The -t flag lets you tag your image so it's easier to find later using the docker images command:
+
+```
+$ docker build -t <your_username>/node-web-app .
+```
+Install docker on your system and signup. Replace <your_username> with your username.
