@@ -77,3 +77,16 @@ Go to the directory that has your Dockerfile and run the following command to bu
 $ docker build -t <your_username>/node-web-app .
 ```
 Install docker on your system and signup. Replace <your_username> with your username.
+
+
+Your image will now be listed by Docker:
+
+$ docker images
+
+```
+
+# Example
+REPOSITORY                      TAG        ID              CREATED
+node                            8          1934b0b038d1    5 days ago
+<your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
+```
