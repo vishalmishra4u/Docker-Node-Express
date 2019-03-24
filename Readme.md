@@ -90,3 +90,24 @@ REPOSITORY                      TAG        ID              CREATED
 node                            8          1934b0b038d1    5 days ago
 <your username>/node-web-app    latest     d64d3505b0d2    1 minute ago
 ```
+
+## Run the image
+
+Running your image with -d runs the container in detached mode, leaving the container running in the background. The -p flag redirects a public port to a private port inside the container. Run the image you previously built:
+
+```
+$ docker run -p 49160:8080 -d <your username>/node-web-app
+```
+
+Print the output of your app:
+
+```
+# Get container ID
+$ docker ps
+
+# Print app output
+$ docker logs <container id>
+
+# Example
+Running on http://localhost:8080
+```
